@@ -406,7 +406,7 @@
         "tags": [
           "DataAsset"
         ],
-        "summary": "Get a DataAsset in a workspace",
+        "summary": "Get a DataAsset in a workspace.",
         "description": "Get a DataAsset in a Workspace",
         "operationId": "DataAssets_Get",
         "parameters": [
@@ -517,7 +517,7 @@
         "tags": [
           "DataAsset"
         ],
-        "summary": "Delete a DataAsset in a workspace",
+        "summary": "Delete a DataAsset in a workspace.",
         "description": "Delete a DataAsset in a Workspace",
         "operationId": "DataAssets_Delete",
         "parameters": [
@@ -574,9 +574,9 @@
         "tags": [
           "DataSet"
         ],
-        "summary": "List DataSets in a share.",
+        "summary": "List DataSets in a DataAsset.",
         "description": "List DataSets in a DataAsset",
-        "operationId": "DataSets_ListByDataAssets",
+        "operationId": "DataSets_ListByDataAsset",
         "parameters": [
           {
             "$ref": "#/parameters/subscriptionId"
@@ -623,8 +623,8 @@
           "nextLinkName": "nextLink"
         },
         "x-ms-examples": {
-          "DataSets_ListByDataAssets": {
-            "$ref": "./examples/DataSets_ListByDataAssets.json"
+          "DataSets_ListByDataAsset": {
+            "$ref": "./examples/DataSets_ListByDataAsset.json"
           }
         }
       }
@@ -634,7 +634,7 @@
         "tags": [
           "DataSet"
         ],
-        "summary": "Get a DataSet in a DataAsset",
+        "summary": "Get a DataSet in a DataAsset.",
         "description": "Get a DataSet in a DataAsset",
         "operationId": "DataSets_Get",
         "parameters": [
@@ -767,7 +767,7 @@
         "tags": [
           "DataSet"
         ],
-        "summary": "Delete a DataSet in a DataAsset",
+        "summary": "Delete a DataSet in a DataAsset.",
         "description": "Delete a DataSet in a DataAsset",
         "operationId": "DataSets_Delete",
         "parameters": [
@@ -2551,7 +2551,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Ci/workspaces/{workspaceName}/scripts/{scriptName}/revisions": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Ci/workspaces/{workspaceName}/scripts/{scriptName}/scriptRevisions": {
       "get": {
         "tags": [
           "Script"
@@ -2611,7 +2611,7 @@
         }
       }
     },
-    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Ci/workspaces/{workspaceName}/scripts/{scriptName}/revisions/{revision}": {
+    "/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Ci/workspaces/{workspaceName}/scripts/{scriptName}/scriptRevisions/{revision}": {
       "get": {
         "tags": [
           "Script"
@@ -4340,7 +4340,8 @@
       "in": "path",
       "description": "The name of the workspace.",
       "required": true,
-      "type": "string"
+      "type": "string",
+      "x-ms-parameter-location": "method"
     }
   },
   "securityDefinitions": {
