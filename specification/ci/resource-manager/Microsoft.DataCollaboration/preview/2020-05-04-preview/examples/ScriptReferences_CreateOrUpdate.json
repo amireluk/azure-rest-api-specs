@@ -4,14 +4,12 @@
     "resourceGroupName": "SampleResourceGroup",
     "workspaceName": "Workspace1",
     "proposalName": "Proposal1",
-    "entitlementName": "Entitlement1",
-    "policyName": "Policy1",
+    "referenceName": "ScriptReference1",
     "api-version": "2020-05-04-preview",
-    "policy": {
-      "kind": "DiagnosticLevel",
+    "scriptReference": {
       "properties": {
-        "description": "Policy description",
-        "logLevel": "Information"
+        "scriptId": "d164252e-2909-4718-a91e-315195c54b09",
+        "revision": 1
       }
     }
   },
@@ -25,14 +23,13 @@
         "x-ms-correlation-request-id": "25c78f97-0b0a-4fe9-ad39-883a482265cd"
       },
       "body": {
-        "kind": "DiagnosticLevel",
         "properties": {
-          "description": "Policy description",
-          "logLevel": "Information"
+          "scriptId": "d164252e-2909-4718-a91e-315195c54b09",
+          "revision": 1
         },
-        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/proposals/Proposal1/entitlements/Entitlement1/policies/Policy1",
-        "name": "Policy1",
-        "type": "Microsoft.DataCollaboration/Policy"
+        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/proposals/Proposal1/scriptReferences/ScriptReference1",
+        "name": "ScriptReference1",
+        "type": "Microsoft.DataCollaboration/workspaces/proposals/scriptReferences"
       }
     },
     "201": {
@@ -44,14 +41,13 @@
         "x-ms-correlation-request-id": "25c78f97-0b0a-4fe9-ad39-883a482265cd"
       },
       "body": {
-        "kind": "DiagnosticLevel",
         "properties": {
-          "description": "Policy description",
-          "logLevel": "Information"
+          "scriptId": "d164252e-2909-4718-a91e-315195c54b09",
+          "revision": 1
         },
-        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/proposals/Proposal1/entitlements/Entitlement1/policies/Policy1",
-        "name": "Policy1",
-        "type": "Microsoft.DataCollaboration/Policy"
+        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/proposals/Proposal1/scriptReferences/ScriptReference1",
+        "name": "ScriptReference1",
+        "type": "Microsoft.DataCollaboration/workspaces/proposals/scriptReferences"
       }
     }
   }

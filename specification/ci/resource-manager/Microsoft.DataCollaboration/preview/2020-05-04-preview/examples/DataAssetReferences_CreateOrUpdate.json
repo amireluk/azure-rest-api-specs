@@ -8,7 +8,7 @@
     "api-version": "2020-05-04-preview",
     "dataAssetReference": {
       "properties": {
-        "dataSetId": "d164252e-2909-4718-a91e-315195c54b09"
+        "dataAssetId": "d164252e-2909-4718-a91e-315195c54b09"
       }
     }
   },
@@ -23,11 +23,11 @@
       },
       "body": {
         "properties": {
-          "dataSetId": "d164252e-2909-4718-a91e-315195c54b09"
+          "dataAssetId": "d164252e-2909-4718-a91e-315195c54b09"
         },
         "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/proposals/Proposal1/dataAssetReferences/DataAssetReference1",
         "name": "DataAssetReference1",
-        "type": "Microsoft.DataCollaboration/DataAssetReference"
+        "type": "Microsoft.DataCollaboration/workspaces/proposals/dataAssetReferences"
       }
     },
     "201": {
@@ -40,11 +40,11 @@
       },
       "body": {
         "properties": {
-          "dataSetId": "d164252e-2909-4718-a91e-315195c54b09"
+          "dataAssetId": "d164252e-2909-4718-a91e-315195c54b09"
         },
         "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/proposals/Proposal1/dataAssetReferences/DataAssetReference1",
         "name": "DataAssetReference1",
-        "type": "Microsoft.DataCollaboration/DataAssetReference"
+        "type": "Microsoft.DataCollaboration/workspaces/proposals/dataAssetReferences"
       }
     }
   }

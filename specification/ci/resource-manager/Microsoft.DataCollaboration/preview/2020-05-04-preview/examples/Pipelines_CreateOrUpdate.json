@@ -3,11 +3,11 @@
     "subscriptionId": "12345678-1234-1234-1234-567890abcdef",
     "resourceGroupName": "SampleResourceGroup",
     "workspaceName": "Workspace1",
-    "dataAssetName": "DataAsset1",
+    "pipelineName": "Pipeline1",
     "api-version": "2020-05-04-preview",
-    "dataAsset": {
+    "pipeline": {
       "properties": {
-        "description": "Data of DataSet1"
+        "description": "A pipeline"
       }
     }
   },
@@ -22,12 +22,11 @@
       },
       "body": {
         "properties": {
-          "dataAssetId": "a08f184b-0567-890a-ba22-a1199336d226",
-          "description": "Data of DataSet1"
+          "description": "A pipeline"
         },
-        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/dataAssets/DataAsset1",
-        "name": "DataAsset1",
-        "type": "Microsoft.DataCollaboration/DataAsset"
+        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/pipelines/Pipeline1",
+        "name": "Pipeline1",
+        "type": "Microsoft.DataCollaboration/workspaces/pipelines"
       }
     },
     "201": {
@@ -40,12 +39,11 @@
       },
       "body": {
         "properties": {
-          "dataAssetId": "a08f184b-0567-890a-ba22-a1199336d226",
-          "description": "Data of DataAsset1"
+          "description": "A pipeline"
         },
-        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/dataAssets/DataAsset1",
-        "name": "Dataset1",
-        "type": "Microsoft.DataCollaboration/DataAsset"
+        "id": "/subscriptions/12345678-1234-1234-1234-567890abcdef/resourceGroups/SampleResourceGroup/providers/Microsoft.DataCollaboration/workspaces/Workspace1/pipelines/Pipeline1",
+        "name": "Pipeline1",
+        "type": "Microsoft.DataCollaboration/workspaces/pipelines"
       }
     }
   }
